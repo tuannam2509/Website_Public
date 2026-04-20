@@ -440,7 +440,17 @@ a:hover {
 }
 
 .paper-authors {
-    color: var(--text-muted);
+    color: var(--text-secondary);
+}
+
+.paper-authors a {
+    color: var(--text-secondary);
+    border-bottom: 1px dotted var(--text-muted);
+}
+
+.paper-authors a:hover {
+    color: var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
 }
 
 .paper-summary {
