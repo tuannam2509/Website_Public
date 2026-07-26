@@ -1,5 +1,39 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    // Collapse paper summaries into controls beside each paper's resource links.
+    document.querySelectorAll('.paper-summary').forEach((summary, index) => {
+        const summaryId = `paper-summary-${index + 1}`;
+        const paperItem = summary.closest('.paper-item');
+        let paperLinks = paperItem.querySelector('.paper-links');
+
+        if (!paperLinks) {
+            paperLinks = document.createElement('div');
+            paperLinks.className = 'paper-links';
+            summary.before(paperLinks);
+        }
+
+        paperLinks.after(summary);
+
+        summary.id = summaryId;
+        summary.hidden = true;
+
+        const toggle = document.createElement('button');
+        toggle.type = 'button';
+        toggle.className = 'paper-link summary-toggle';
+        toggle.setAttribute('aria-controls', summaryId);
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.innerHTML = '<i class="fas fa-align-left" aria-hidden="true"></i><span>Summary</span>';
+
+        toggle.addEventListener('click', () => {
+            const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', String(!isExpanded));
+            summary.hidden = isExpanded;
+            toggle.querySelector('span').textContent = isExpanded ? 'Summary' : 'Hide Summary';
+        });
+
+        paperLinks.append(toggle);
+    });
+
 
     // 3. Mobile Navigation Hamburger
     const hamburger = document.querySelector('.hamburger');
@@ -29,7 +63,46 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 4. Smooth Scrolling & Active State
+    // Faster, consistent scrolling for same-page navigation.
+    const scrollDuration = 400;
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    document.querySelectorAll('.nav-link[href^="#"], .logo[href^="#"]').forEach(link => {
+        link.addEventListener('click', event => {
+            const target = document.querySelector(link.getAttribute('href'));
+
+            if (!target) return;
+
+            event.preventDefault();
+
+            const navbarHeight = document.querySelector('.navbar').offsetHeight;
+            const startPosition = window.pageYOffset;
+            const targetPosition = Math.max(
+                0,
+                target.getBoundingClientRect().top + startPosition - navbarHeight
+            );
+            const distance = targetPosition - startPosition;
+            const startTime = performance.now();
+
+            const animateScroll = currentTime => {
+                const elapsed = currentTime - startTime;
+                const progress = reducedMotion ? 1 : Math.min(elapsed / scrollDuration, 1);
+                const easedProgress = 1 - Math.pow(1 - progress, 3);
+
+                window.scrollTo(0, startPosition + distance * easedProgress);
+
+                if (progress < 1) {
+                    requestAnimationFrame(animateScroll);
+                } else if (window.location.hash !== link.getAttribute('href')) {
+                    history.pushState(null, '', link.getAttribute('href'));
+                }
+            };
+
+            requestAnimationFrame(animateScroll);
+        });
+    });
+
+    // 4. Navigation Active State
     const sections = document.querySelectorAll('section');
     const navItems = document.querySelectorAll('.nav-link');
     

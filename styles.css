@@ -33,7 +33,6 @@
 }
 
 html {
-    scroll-behavior: smooth;
     scroll-padding-top: 80px; /* Offset for sticky nav */
 }
 
@@ -412,14 +411,14 @@ a:hover {
 }
 
 .paper-title {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.1rem;
     display: inline;
-    color: var(--text-primary);
+    color: #1e3a5f;
 }
 
 .paper-title:hover {
-    color: var(--accent-color);
+    color: #12263f;
     text-decoration: underline;
 }
 
@@ -432,6 +431,7 @@ a:hover {
 .paper-journal {
     font-size: 1.1rem;
     font-weight: 700;
+    font-style: italic;
     color: var(--text-primary);
 }
 
@@ -441,6 +441,20 @@ a:hover {
 
 .paper-authors {
     color: var(--text-secondary);
+}
+
+.research-sidebar .paper-title,
+.work-in-progress .paper-title {
+    font-size: 1rem;
+}
+
+.research-sidebar .paper-meta {
+    font-size: 0.95rem;
+}
+
+.research-sidebar .paper-authors,
+.work-in-progress .paper-authors {
+    font-size: 0.9rem;
 }
 
 .paper-authors a {
@@ -463,6 +477,10 @@ a:hover {
     padding: 0.75rem 1rem;
     border-left: 3px solid var(--accent-color);
     border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.paper-summary[hidden] {
+    display: none;
 }
 
 /* Compact summary variant for working papers sidebar */
@@ -489,6 +507,13 @@ a:hover {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
+}
+
+button.paper-link {
+    color: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    cursor: pointer;
 }
 
 .paper-link:hover {
