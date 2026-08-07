@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< HEAD
   <meta charset="utf-8">
   <title>Nam T. Vu</title>
   <style>
@@ -18,20 +17,6 @@
       This page requires JavaScript to display.
     </div>
   </noscript>
-=======
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nam T. Vu | Associate Professor of Economics</title>
-    <meta name="description"
-        content="Nam T. Vu, Associate Professor of Economics at Miami University. Specializations: international finance, macroeconomics, applied time-series econometrics.">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Serif:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
->>>>>>> 0e570f409c2ae237421c9493876a92ef5b50c022
 </head>
 <body>
   <div id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" sc-camel-view-box="0 0 100 100"><rect width="100" height="100" fill="#f5f3ef"></rect><text x="50" y="60" font-family="Georgia, serif" font-size="30" fill="#8a1220" text-anchor="middle">NV</text></svg></div>
@@ -53,7 +38,6 @@ document.addEventListener('DOMContentLoaded', async function() {
     return btoa(bin);
   }
 
-<<<<<<< HEAD
   // Error sink persists across replaceWith since it's on window, not the DOM.
   window.addEventListener('error', function(e) {
     // Failed resource loads (CSP-blocked links, scripts, images) fire plain
@@ -71,23 +55,6 @@ document.addEventListener('DOMContentLoaded', async function() {
       '[bundle] ' + (e.message || e.type) +
       (e.filename ? ' (' + e.filename.slice(0, 60) + ':' + e.lineno + ')' : '');
   }, true);
-=======
-        <!-- Bio Section -->
-        <section class="section visible" style="padding-top: 4rem;">
-            <div class="container hero-content">
-                <div class="hero-image-container" style="box-shadow: none;">
-                    <img src="Nam Vu O6016_001.jpg" alt="Nam T. Vu"
-                        style="width: 100%; border-radius: 8px; box-shadow: var(--shadow-md);" id="profile-img"
-                        onerror="this.src='https://placehold.co/400x500/1e293b/ffffff?text=Nam+T.+Vu'">
-                </div>
-                <div class="hero-text">
-                    <h2 class="greeting">Greetings!</h2>
-                    <p class="bio" style="color: var(--text-primary); margin-top: 1rem;">
-                        I am an economist at Miami University. I study questions related to international finance, macroeconomics,
-                        and applied time-series econometrics. I am also an Associate Editor for Economic Inquiry and
-                        International Finance.
-                    </p>
->>>>>>> 0e570f409c2ae237421c9493876a92ef5b50c022
 
   try {
     const manifestEl = document.querySelector('script[type="__bundler/manifest"]');
@@ -309,7 +276,6 @@ document.addEventListener('DOMContentLoaded', async function() {
     // consumers read these Blobs directly. Survives the swap like the error sink.
     window.__resourceBlobs = resourceBlobs;
 
-<<<<<<< HEAD
     setStatus('Rendering...');
     // Page uuids have no blob here — they ride inside about:blank#<uuid>
     // frame markers the pass below resolves after the swap.
@@ -317,41 +283,6 @@ document.addEventListener('DOMContentLoaded', async function() {
       if (pageSet.has(uuid)) continue;
       template = template.split(uuid).join(blobUrls[uuid]);
     }
-=======
-                        <div class="research-category mt-4">
-                            <h3 class="category-title"><i class="fas fa-microphone-alt"></i> Presentations
-                            </h3>
-                            <div class="presentations">
-                                <p><strong>2026</strong> - FRC (London, UK), Baltic Economic Conference (Riga), EEA (Dublin)*, RISE Conference (Cleveland Fed)*, Colgate University</p>
-                                <p><strong>2025</strong> - QMUL (London, UK), UEA (Berlin, Germany), MMF (Reading, UK)
-                                </p>
-                                <p><strong>2024</strong> - SNEE (Lund, Sweden), CEA (Toronto*), Midwest Macro (Purdue)
-                                </p>
-                                <p><strong>2022</strong> - WEAI (Portland, OR), Midwest Macro Meetings (Utah and Texas),
-                                    Liberal Arts Macro (Middlebury)</p>
-                                <p><strong>2021</strong> – Canadian Economic Association Meetings (Virtual), Southern
-                                    Economics Association (Virtual)</p>
-                                <p><strong>2020</strong> – WEAI (Virtual), Southern Economics Association (Virtual)</p>
-                                <p><strong>2019</strong> – Midwest Macro Meetings (UGA and MSU), Union College (NY), SEA
-                                    (FL), AEA</p>
-                                <p><strong>2018</strong> – Vanderbilt University, WEAI (Canada), Midwest Macro Meetings
-                                    (Vanderbilt, Nashville)</p>
-                                <p><strong>2017</strong> – University of Cincinnati, Oberlin College, WEAI (San Diego),
-                                    Midwest Macro (LSU)</p>
-                                <p><strong>2016</strong> – Midwest Macro Meetings (Kansas Fed), Southern Economics
-                                    Association (Washington D.C.)</p>
-                                <p><strong>2015</strong> – Midwest Macro Meetings (Rochester, NY*), Southern Economics
-                                    Association (New Orleans, LA)</p>
-                                <p><strong>2012 - 2014</strong> – Vanderbilt (International Seminar), Midwest Macro (UC
-                                    Boulder, FIU), Missouri Economic Conference, Miami, Fordham</p>
-                                <small class="text-muted">(* selected co-author presentations)</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
->>>>>>> 0e570f409c2ae237421c9493876a92ef5b50c022
 
     // Strip integrity + crossorigin — blob URLs from a file:// document inherit
     // a null origin, so crossorigin forces a CORS fetch that SRI then rejects.
