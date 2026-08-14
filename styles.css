@@ -97,6 +97,7 @@ section:first-of-type > h2 { margin-top: 52px; }
 .research-marker { padding-top: 2px; color: #b8b3ab; font-size: 15px; text-align: right; }
 .research-title, .progress-item h3 { color: var(--ink); font-size: 15.5px; font-weight: 500; line-height: 1.5; text-wrap: pretty; }
 .research-meta, .progress-item p { margin: 4px 0 0; color: #6b6862; font-size: 13.5px; line-height: 1.6; }
+.research-meta { display: block; }
 .research-meta em { color: #26241f; }
 
 .research-details {
