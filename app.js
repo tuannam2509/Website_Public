@@ -37,7 +37,7 @@ const publications = [
 
 const workingPapers = [
   ["Under review", "Natural Disasters and Asset Prices: Evidence from Winter Storm Uri.", ["cheng"], "Asset prices respond more strongly to natural disasters for firms facing high investment adjustment costs.", []],
-  ["Revise and resubmit", "Real Effects of Inflation Expectation Uncertainty.", [], "A dynamic model with cognitive discounting of future inflation amplifies the consumption decline to uncertainty shocks.", []],
+  ["Forthcoming, Oxford Economic Papers", "Real Effects of Inflation Expectation Uncertainty.", [], "A dynamic model with cognitive discounting of future inflation amplifies the consumption decline to uncertainty shocks.", [["Working paper", fileBase + "OEP_2026.pdf"]]],
   ["", "A Tale of Infrequent but Long-lasting Liquidity Traps.", ["huang"], "In a nonlinear DSGE model with heterogeneous firms, both liquidity trap duration and the government spending multiplier are hump-shaped in the size of fiscal stimulus.", []],
   ["", "Growth in a Time of (Projected) Debt.", ["jackie", "wolff"], "An increase in projected debt reduces growth above a threshold but raises it below.", []],
   ["Under review", "Sectoral Shifts and Geopolitical Risks.", ["berg"], "Unexpected geopolitical shocks induce sectoral shifts and output declines.", []],
@@ -79,7 +79,7 @@ function renderResearchItems(containerId, items, isPublication) {
   const container = document.getElementById(containerId);
   items.forEach((item) => {
     const [first, title, journalOrAuthors, urlOrSummary, authorsOrLinks, summaryOrUndefined, linksOrUndefined] = item;
-    const journal = isPublication ? journalOrAuthors : "";
+    const journal = isPublication ? journalOrAuthors : first;
     const url = isPublication ? urlOrSummary : "";
     const authorIds = isPublication ? authorsOrLinks : journalOrAuthors;
     const summary = isPublication ? summaryOrUndefined : urlOrSummary;
