@@ -36,12 +36,12 @@ const publications = [
 ];
 
 const workingPapers = [
-  ["Under review", "Natural Disasters and Asset Prices: Evidence from Winter Storm Uri.", ["cheng"], "Asset prices respond more strongly to natural disasters for firms facing high investment adjustment costs.", []],
-  ["Forthcoming, Oxford Economic Papers", "Real Effects of Inflation Expectation Uncertainty.", [], "A dynamic model with cognitive discounting of future inflation amplifies the consumption decline to uncertainty shocks.", [["Working paper", fileBase + "OEP_2026.pdf"]]],
+  ["Accepted, Oxford Economic Papers", "Real Effects of Inflation Expectation Uncertainty.", [], "A dynamic model with cognitive discounting of future inflation amplifies the consumption decline to uncertainty shocks.", [["Working paper", fileBase + "OEP_2026.pdf"]]],
   ["", "A Tale of Infrequent but Long-lasting Liquidity Traps.", ["huang"], "In a nonlinear DSGE model with heterogeneous firms, both liquidity trap duration and the government spending multiplier are hump-shaped in the size of fiscal stimulus.", []],
   ["", "Growth in a Time of (Projected) Debt.", ["jackie", "wolff"], "An increase in projected debt reduces growth above a threshold but raises it below.", []],
   ["Under review", "Sectoral Shifts and Geopolitical Risks.", ["berg"], "Unexpected geopolitical shocks induce sectoral shifts and output declines.", []],
-  ["", "What Matters for the Rise in Trade? Evidence from the African Continental Free Trade Area.", ["kiet", "toan", "povilas"], "AfCFTA promoted trade for firms with prior overseas export experience, those in goods-producing sectors, and those with lower capital adjustment costs.", [["Slides", "https://www.dropbox.com/scl/fi/wncouqrmw9rkemebnlqev/presentation_frc.pdf?rlkey=bhkolj7z3dv03ihxnswgnn3z6&st=wm2iih5h&dl=0"]]]
+  ["Under review", "Natural Disasters and Asset Prices: Evidence from Winter Storm Uri.", ["cheng"], "Asset prices respond more strongly to natural disasters for firms facing high investment adjustment costs.", []],
+  ["", "What Matters for the Rise in Trade? Evidence from the African Continental Free Trade Area.", ["kiet", "toan", "povilas"], "AfCFTA promoted trade for firms with prior overseas export experience, those in goods-producing sectors, and those with lower capital adjustment costs.", [["IMF Working Paper", "https://www.elibrary.imf.org/view/journals/001/2026/199/001.2026.issue-199-en.xml?cid=579745-com-dsp-crossref"], ["Slides", "https://www.dropbox.com/scl/fi/wncouqrmw9rkemebnlqev/presentation_frc.pdf?rlkey=bhkolj7z3dv03ihxnswgnn3z6&st=wm2iih5h&dl=0"]]]
 ];
 
 function appendText(parent, text) {
