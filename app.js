@@ -16,7 +16,8 @@ const people = {
   huang: ["Kevin X.D. Huang", "https://as.vanderbilt.edu/econ/bio/kevin-huang"],
   jackie: ["Jackie McCafferty", ""],
   wolff: ["Jonathan Wolff", "https://miamioh.edu/fsb/directory/?up=/directory/wolffjs"],
-  povilas: ["Povilas Lastaukas", "https://www.lastauskas.com/"]
+  povilas: ["Povilas Lastaukas", "https://www.lastauskas.com/"],
+  ryan: ["Ryan Collins", ""]
 };
 
 const publications = [
@@ -39,7 +40,8 @@ const workingPapers = [
   ["Accepted, Oxford Economic Papers", "Real Effects of Inflation Expectation Uncertainty.", [], "A dynamic model with cognitive discounting of future inflation amplifies the consumption decline to uncertainty shocks.", [["Working paper", fileBase + "OEP_2026.pdf"]]],
   ["", "Growth in a Time of (Projected) Debt.", ["jackie", "wolff"], "An increase in projected debt reduces growth above a threshold but raises it below.", []],
   ["", "What Matters for the Rise in Trade? Evidence from the African Continental Free Trade Area.", ["kiet", "toan", "povilas"], "AfCFTA promoted trade for firms with prior overseas export experience, those in goods-producing sectors, and those with lower capital adjustment costs.", [["IMF Working Paper", "https://www.elibrary.imf.org/view/journals/001/2026/199/001.2026.issue-199-en.xml?cid=579745-com-dsp-crossref"], ["Slides", "https://www.dropbox.com/scl/fi/wncouqrmw9rkemebnlqev/presentation_frc.pdf?rlkey=bhkolj7z3dv03ihxnswgnn3z6&st=wm2iih5h&dl=0"]]],
-  ["Under review", "Sectoral Shifts and Geopolitical Risks.", ["berg"], "Unexpected geopolitical shocks induce sectoral shifts and output declines.", []],
+  ["Revised and resubmit", "Sectoral Shifts and Geopolitical Risks.", ["berg"], "Unexpected geopolitical shocks induce sectoral shifts and output declines.", []],
+  ["Under review", "No Time to Diversify: Sectoral Connectedness under Geopolitical Risk.", ["ryan"], "", []],
   ["Under review", "Natural Disasters and Asset Prices: Evidence from Winter Storm Uri.", ["cheng"], "Asset prices respond more strongly to natural disasters for firms facing high investment adjustment costs.", []],
   ["", "A Tale of Infrequent but Long-lasting Liquidity Traps.", ["huang"], "In a nonlinear DSGE model with heterogeneous firms, both liquidity trap duration and the government spending multiplier are hump-shaped in the size of fiscal stimulus.", []]
 ];
