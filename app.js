@@ -14,10 +14,10 @@ const people = {
   bawa: ["Siraj G. Bawa", "https://sirajbawa.wordpress.com/"],
   jiayu: ["Jiayu Wu (Miami University 18', Honor Thesis)", ""],
   huang: ["Kevin X.D. Huang", "https://as.vanderbilt.edu/econ/bio/kevin-huang"],
-  jackie: ["Jackie McCafferty", ""],
+  jackie: ["Jackie McCafferty", "https://www.linkedin.com/in/jackiemccafferty/"],
   wolff: ["Jonathan Wolff", "https://miamioh.edu/fsb/directory/?up=/directory/wolffjs"],
   povilas: ["Povilas Lastaukas", "https://www.lastauskas.com/"],
-  ryan: ["Ryan Collins", ""]
+  ryan: ["Ryan Collins (Miami University 24')", "https://www.linkedin.com/in/ryan-collins-678339257/"]
 };
 
 const publications = [
