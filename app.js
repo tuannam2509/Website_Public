@@ -17,7 +17,7 @@ const people = {
   jackie: ["Jackie McCafferty", ""],
   wolff: ["Jonathan Wolff", "https://miamioh.edu/fsb/directory/?up=/directory/wolffjs"],
   povilas: ["Povilas Lastaukas", "https://www.lastauskas.com/"],
-  ryan: ["Ryan Collins", ""]
+  ryan: ["Ryan Collins (Miami University 24')", ""]
 };
 
 const publications = [
