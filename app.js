@@ -21,6 +21,7 @@ const people = {
 };
 
 const publications = [
+  ["2026", "Real Effects of Inflation Expectation Uncertainty.", "Oxford Economic Papers", "https://academic.oup.com/oep/advance-article/doi/10.1093/oep/gpag034/8943678", [], "A dynamic model with cognitive discounting of future inflation amplifies the consumption decline to uncertainty shocks.", [["Working paper", fileBase + "OEP_2026.pdf"], ["Published version", "https://academic.oup.com/oep/advance-article/doi/10.1093/oep/gpag034/8943678"]]],
   ["2026", "State-dependent Distribution Friction and the Transmission of Monetary Policy.", "European Economic Review", "https://www.sciencedirect.com/science/article/abs/pii/S0014292126001650?via%3Dihub", ["cheng"], "State-dependent distribution frictions weaken the real effects of monetary policy.", [["Working paper", fileBase + "EER_2026.pdf"]]],
   ["2026", "Labor Supply, Risk Aversion, and Conflict Uncertainty.", "Risk Analysis", "https://onlinelibrary.wiley.com/doi/10.1111/risa.70308", ["kiet"], "Conflict uncertainty negatively affects individuals' willingness to work.", [["Working paper", fileBase + "RA_2026.pdf"], ["Slides", fileBase + "Presentation_Poland_BEA_2026_June.pdf"]]],
   ["2025", "The Real Effects of Brexit on Labor Demand: Evidence from Firm-level Data.", "Journal of International Economics", "https://www.sciencedirect.com/science/article/pii/S0022199625000856", ["hang", "kiet", "toan"], "The 2020 Brexit implementation led exposed firms to reduce their workforce by up to 15.7% relative to firms near the Irish border.", [["Working paper", fileBase + "JIE_2025.pdf"], ["VoxEU", "https://cepr.org/voxeu/columns/real-effects-brexit-labour-demand"]]],
@@ -37,7 +38,6 @@ const publications = [
 ];
 
 const workingPapers = [
-  ["Accepted, Oxford Economic Papers", "Real Effects of Inflation Expectation Uncertainty.", [], "A dynamic model with cognitive discounting of future inflation amplifies the consumption decline to uncertainty shocks.", [["Working paper", fileBase + "OEP_2026.pdf"]]],
   ["", "Growth in a Time of (Projected) Debt.", ["jackie", "wolff"], "An increase in projected debt reduces growth above a threshold but raises it below.", []],
   ["", "What Matters for the Rise in Trade? Evidence from the African Continental Free Trade Area.", ["kiet", "toan", "povilas"], "AfCFTA promoted trade for firms with prior overseas export experience, those in goods-producing sectors, and those with lower capital adjustment costs.", [["IMF Working Paper", "https://www.elibrary.imf.org/view/journals/001/2026/199/001.2026.issue-199-en.xml?cid=579745-com-dsp-crossref"], ["Cambridge Working Paper Series", "https://www.janeway.econ.cam.ac.uk/publication/jiwp2638"], ["Slides", "https://www.dropbox.com/scl/fi/wncouqrmw9rkemebnlqev/presentation_frc.pdf?rlkey=bhkolj7z3dv03ihxnswgnn3z6&st=wm2iih5h&dl=0"]]],
   ["Revise and resubmit", "Sectoral Shifts and Geopolitical Risks.", ["berg"], "Unexpected geopolitical shocks induce sectoral shifts and output declines.", []],
