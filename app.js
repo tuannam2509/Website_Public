@@ -16,7 +16,7 @@ const people = {
   huang: ["Kevin X.D. Huang", "https://as.vanderbilt.edu/econ/bio/kevin-huang"],
   jackie: ["Jackie McCafferty", "https://www.linkedin.com/in/jackiemccafferty/"],
   wolff: ["Jonathan Wolff", "https://miamioh.edu/fsb/directory/?up=/directory/wolffjs"],
-  povilas: ["Povilas Lastaukas", "https://www.lastauskas.com/"],
+  povilas: ["Povilas Lastauskas", "https://www.lastauskas.com/"],
   ryan: ["Ryan Collins (Miami University 24')", "https://www.linkedin.com/in/ryan-collins-678339257/"]
 };
 
