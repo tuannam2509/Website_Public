@@ -38,6 +38,7 @@ const publications = [
 ];
 
 const workingPapers = [
+  ["", "Belief Disagreement and the Housing Credit Channel.", [], "Wider disagreement about future house prices tightens mortgage credit and disproportionately harms low-wealth borrowers, with aggregate monetary easing restoring little of their loss.", [["Working paper", fileBase + "Vu_Belief_2026.pdf"], ["SSRN", "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7702878"], ["Slides (Midwest Macro)", fileBase + "Vu_Belief_Slide_Midwest_2026.pdf"]]],
   ["", "Growth in a Time of (Projected) Debt.", ["jackie", "wolff"], "An increase in projected debt reduces growth above a threshold but raises it below.", []],
   ["Revise and resubmit", "Sectoral Shifts and Geopolitical Risks.", ["berg"], "We show that heightened geopolitical risk induces a reallocation of resources across sectors, or a sectoral shift, and a reduction in output, using data for 17 countries and over 24 years.  Importantly, this sectoral reallocation is itself, a channel through which output declines, with roughly one-fifth to two-fifths of the cumulative decline in output operating through this channel.", []],
   ["Under review", "No Time to Diversify: Sectoral Connectedness under Geopolitical Risk.", ["ryan"], "Geopolitical risk can push sector returns apart through a flight to safety into certain sectors or pull them together as a common shock. We construct a measure of sectoral connectedness for 15 countries from 2000 to 2023 and find that the latter channel dominates.", []],
